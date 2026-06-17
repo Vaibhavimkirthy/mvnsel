@@ -29,7 +29,7 @@ pipeline {
         stage('Run Application') {
             steps {
                 // Start the JAR application
-                sh 'mvn exec:java'
+                sh 'java -jar target/mvnsel-1.0-SNAPSHOT.jar'
             }
         }
 
